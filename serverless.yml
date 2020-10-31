@@ -5,6 +5,7 @@ provider:
   name: aws
   runtime: nodejs12.x
   profile: rsAppAccount
+  region: eu-west-1
 
 plugins:
   - serverless-finch
@@ -12,7 +13,7 @@ plugins:
 
 custom:
   client:
-    bucketName: my-rs-app
+    bucketName: my-rs-app-fe
     distributionFolder: build
     indexDocument: index.html
     manageResources: false
